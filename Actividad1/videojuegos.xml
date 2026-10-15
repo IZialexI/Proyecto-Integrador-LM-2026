@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo>
+	<videojuego id="001" plataforma="Nintendo DS" genero="Plataformas">
+		<titulo>New Super Mario Bros DS</titulo>
+	</videojuego>
+	<videojuego id="002" plataforma="Multiplataforma" genero="Soulslike">
+		<titulo>Star Wars Jedi: Survivor</titulo>
+	</videojuego>
+	<videojuego id="003" plataforma="PC" genero="Programa">
+		<titulo>Wallpaper Engine</titulo>
+	</videojuego>
+	<videojuego id="004" plataforma="Nintendo Wii" genero="Plataformas">
+		<titulo>Super Mario Galaxy</titulo>
+	</videojuego>
+	<videojuego id="005" plataforma="Móvil" genero="Defensa de torres">
+		<titulo>Clash Royale</titulo>
+	</videojuego>
+	<videojuego id="006" plataforma="Multiplataforma" genero="Peleas">
+		<titulo>Mortal Kombat 11</titulo>
+	</videojuego>
+</catalogo>
