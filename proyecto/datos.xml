@@ -2,7 +2,7 @@
 <!-- Datos de los cuatro juegos principales de la saga Batman: Arkham.
      Cada juego tiene título, año de lanzamiento, nota de la crítica y estudio. -->
 
-<saga propietario="IIIZialexIII">
+<saga propietario="IZialexI">
 
   <juego id="J01">
     <titulo>Batman: Arkham Asylum</titulo>
