@@ -14,7 +14,8 @@ Una web estática (aún sin CSS) y un .xml con algunos datos referentes a los ju
 
 ## Palabra del día
 
-**anticristo**
+- **1.ª entrega:** anticristo
+- **UD3:** contexto
 
 ## UD3 · Estructura HTML
 
