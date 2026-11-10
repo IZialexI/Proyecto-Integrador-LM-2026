@@ -12,6 +12,7 @@ Tenía que ser una web tematizada, así que pensé en una de las sagas de videoj
 
 - **1.ª entrega:** una web estática (aún sin CSS) y un .xml con algunos datos referentes a los juegos.
 - **UD3:** estructura HTML completa en todas las páginas, mapa del sitio y una página nueva (`juegos.html`) con los datos del XML.
+- **UD5:** una tabla de datos de la saga en `juegos.html` y una página nueva (`contacto.html`) con un formulario para apuntarse al club de fans.
 
 ## Palabra del día
 
@@ -56,6 +57,34 @@ He reorganizado la portada sin perder nada de la 1.ª entrega (imagen, listas, e
 ## UD5 · Tablas y formularios
 
 La tabla irá en `juegos.html` y recogerá los juegos de la saga agrupados por estudio, con su año de lanzamiento, el tipo de entrega y la nota de la crítica (más la nota media en el pie). El formulario estará en una página nueva, `contacto.html`, para que los fans se apunten al club de la web y nos cuenten su juego favorito, sus villanos preferidos y su opinión sobre la saga.
+
+### Por qué `post` y no `get`
+
+Uso `method="post"` porque el formulario envía datos personales (nombre, correo y teléfono) y un mensaje largo: con `post` viajan en el cuerpo de la petición y no quedan a la vista en la URL, en el historial ni en los marcadores, y no hay límite práctico de longitud.
+
+### Prueba con `get`
+
+Cambiando temporalmente a `method="get"`, rellenando el formulario y pulsando «Enviar inscripción», la barra del navegador mostró:
+
+```
+file:///mnt/Data/zialex/DAM/LenguajesDeMarcas/proyecto/contacto.html?nombre=Caballero+Oscuro&email=fan%40ejemplo.com&telefono=600+123+456&plataforma=pc&juego=city&villanos=joker&villanos=enigma&mensaje=%C2%A1Arkham+City+es+el+mejor+juego+de+la+saga%21&enviar=Enviar+inscripci%C3%B3n#
+```
+
+Se ve cada `name=value` separado por `&`, los espacios como `+`, los caracteres especiales codificados (`@` → `%40`, `¡` → `%C2%A1`, `ó` → `%C3%B3`) y el `name="villanos"` repetido una vez por cada casilla marcada. Después volví a dejar `method="post"`.
+
+### Validación W3C
+
+| Página | Errores | Avisos | Corrección |
+|---|---|---|---|
+| `juegos.html` | 0 | 0 | No hizo falta ninguna |
+| `contacto.html` | 0 | 0 | No hizo falta ninguna |
+| `index.html` (nuevo enlace) | 0 | 0 | No hizo falta ninguna |
+
+El validador (validator.w3.org) no dio ningún error ni aviso, así que no hubo commits `fix(...)` en esta unidad.
+
+### Resumen
+
+En `juegos.html` he añadido una tabla de datos con `caption`, `colgroup`, `thead`, `tbody` y `tfoot`: cinco juegos agrupados por estudio, con un `rowspan` para las cuatro filas de Rocksteady Studios, un `colspan` en la cabecera «Lanzamiento» (que agrupa año y tipo) y otro en el pie con la nota media, y cabeceras `th` con `scope="col"`, `scope="colgroup"` y `scope="row"`. Después he creado `contacto.html` con la misma estructura que el resto de páginas y un formulario `post` con dos `fieldset` («Tus datos» y «Tu opinión sobre la saga»): campos de texto, correo y teléfono, un grupo de `radio` para la plataforma, un `select` con el juego favorito, `checkbox` para los villanos, un `textarea` y los botones de enviar y borrar, todos con su `label for`, `name` e `id` únicos, y los atributos `required`, `maxlength`/`minlength`, `placeholder`, `autofocus`, `selected` y `checked`. Por último he enlazado la página desde la portada, la he añadido al mapa del sitio y he pasado las páginas por el validador del W3C.
 
 ## Mapa del sitio
 
