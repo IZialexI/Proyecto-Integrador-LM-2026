@@ -72,6 +72,8 @@ file:///mnt/Data/zialex/DAM/LenguajesDeMarcas/proyecto/contacto.html?nombre=Caba
 
 Se ve cada `name=value` separado por `&`, los espacios como `+`, los caracteres especiales codificados (`@` → `%40`, `¡` → `%C2%A1`, `ó` → `%C3%B3`) y el `name="villanos"` repetido una vez por cada casilla marcada. Después volví a dejar `method="post"`.
 
+![Prueba del formulario con get en Brave: la barra de direcciones muestra los datos enviados](img/prueba-get.png)
+
 ### Validación W3C
 
 | Página | Errores | Avisos | Corrección |
@@ -84,7 +86,7 @@ El validador (validator.w3.org) no dio ningún error ni aviso, así que no hubo 
 
 ### Resumen
 
-En `juegos.html` he añadido una tabla de datos con `caption`, `colgroup`, `thead`, `tbody` y `tfoot`: cinco juegos agrupados por estudio, con un `rowspan` para las cuatro filas de Rocksteady Studios, un `colspan` en la cabecera «Lanzamiento» (que agrupa año y tipo) y otro en el pie con la nota media, y cabeceras `th` con `scope="col"`, `scope="colgroup"` y `scope="row"`. Después he creado `contacto.html` con la misma estructura que el resto de páginas y un formulario `post` con dos `fieldset` («Tus datos» y «Tu opinión sobre la saga»): campos de texto, correo y teléfono, un grupo de `radio` para la plataforma, un `select` con el juego favorito, `checkbox` para los villanos, un `textarea` y los botones de enviar y borrar, todos con su `label for`, `name` e `id` únicos, y los atributos `required`, `maxlength`/`minlength`, `placeholder`, `autofocus`, `selected` y `checked`. Por último he enlazado la página desde la portada, la he añadido al mapa del sitio y he pasado las páginas por el validador del W3C.
+En `juegos.html` he añadido una tabla de datos con `caption`, `colgroup`, `thead`, `tbody` y `tfoot`: seis juegos agrupados por estudio (los cuatro principales y los dos spin-offs de realidad virtual, *Arkham VR* y *Arkham Shadow*, que también he añadido a `datos.xml` con su nota de Metacritic), con un `rowspan` para las cuatro filas de Rocksteady Studios, un `colspan` en la cabecera «Lanzamiento» (que agrupa año y tipo) y otro en el pie con la nota media, y cabeceras `th` con `scope="col"`, `scope="colgroup"` y `scope="row"`. Después he creado `contacto.html` con la misma estructura que el resto de páginas y un formulario `post` con dos `fieldset` («Tus datos» y «Tu opinión sobre la saga»): campos de texto, correo y teléfono, un grupo de `radio` para la plataforma, un `select` con el juego favorito, `checkbox` para los villanos, un `textarea` y los botones de enviar y borrar, todos con su `label for`, `name` e `id` únicos, y los atributos `required`, `maxlength`/`minlength`, `placeholder`, `autofocus`, `selected` y `checked`. Por último he enlazado la página desde la portada, la he añadido al mapa del sitio y he pasado las páginas por el validador del W3C.
 
 ## Mapa del sitio
 
