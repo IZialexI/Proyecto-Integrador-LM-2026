@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Datos de los cuatro juegos principales de la saga Batman: Arkham.
-     Cada juego tiene título, año de lanzamiento, nota de la crítica y estudio. -->
+     Cada juego tiene título, año de lanzamiento, nota de la crítica y estudio.
+     J05 y J06 son los dos spin-offs de realidad virtual. -->
 
 <saga propietario="IZialexI">
 
@@ -33,6 +34,20 @@
     <lanzamiento anio="2015"/>
     <nota escala="sobre-10">8.7</nota>
     <dlc nombre="Batgirl: A Matter of Family"/>
+  </juego>
+
+  <juego id="J05">
+    <titulo>Batman: Arkham VR</titulo>
+    <estudio>Rocksteady Studios</estudio>
+    <lanzamiento anio="2016"/>
+    <nota escala="sobre-10">7.4</nota>
+  </juego>
+
+  <juego id="J06">
+    <titulo>Batman: Arkham Shadow</titulo>
+    <estudio>Camouflaj</estudio>
+    <lanzamiento anio="2024"/>
+    <nota escala="sobre-10">8.5</nota>
   </juego>
 
 </saga>
