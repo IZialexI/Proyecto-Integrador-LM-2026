@@ -53,6 +53,10 @@ Tenía que ser una web tematizada, así que pensé en una de las sagas de videoj
 
 He reorganizado la portada sin perder nada de la 1.ª entrega (imagen, listas, enlaces y comentario con mi nombre), le he dado una jerarquía de títulos sin saltos y bloques `div` comentados, y he añadido una cita, una ficha en columnas, entidades y un pie. Después he diseñado el mapa del sitio, he aplicado la misma estructura a las cuatro páginas de juegos y he creado `juegos.html` con todos los datos de `datos.xml`.
 
+## UD5 · Tablas y formularios
+
+La tabla irá en `juegos.html` y recogerá los juegos de la saga agrupados por estudio, con su año de lanzamiento, el tipo de entrega y la nota de la crítica (más la nota media en el pie). El formulario estará en una página nueva, `contacto.html`, para que los fans se apunten al club de la web y nos cuenten su juego favorito, sus villanos preferidos y su opinión sobre la saga.
+
 ## Mapa del sitio
 
 | Fichero | title | Qué contiene |
