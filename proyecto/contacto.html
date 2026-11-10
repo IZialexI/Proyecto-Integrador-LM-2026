@@ -56,6 +56,42 @@
           <label for="plataforma-switch">Nintendo Switch</label>
         </p>
       </fieldset>
+
+      <!-- Grupo 2: opinión del fan sobre la saga -->
+      <fieldset>
+        <legend>Tu opinión sobre la saga</legend>
+        <p>
+          <label for="juego">Tu juego favorito</label>
+          <select id="juego" name="juego">
+            <option value="asylum">Batman: Arkham Asylum (2009)</option>
+            <option value="city" selected>Batman: Arkham City (2011)</option>
+            <option value="origins">Batman: Arkham Origins (2013)</option>
+            <option value="knight">Batman: Arkham Knight (2015)</option>
+            <option value="vr">Batman: Arkham VR (2016)</option>
+          </select>
+        </p>
+        <p>¿Qué villanos te gustan más?</p>
+        <p>
+          <input type="checkbox" id="villano-joker" name="villanos" value="joker">
+          <label for="villano-joker">El Joker</label>
+          <input type="checkbox" id="villano-espantapajaros" name="villanos" value="espantapajaros">
+          <label for="villano-espantapajaros">El Espantapájaros</label>
+          <input type="checkbox" id="villano-enigma" name="villanos" value="enigma">
+          <label for="villano-enigma">Enigma</label>
+          <input type="checkbox" id="villano-dos-caras" name="villanos" value="dos-caras">
+          <label for="villano-dos-caras">Dos Caras</label>
+        </p>
+        <p>
+          <label for="mensaje">Tu mensaje para el club *</label>
+          <textarea id="mensaje" name="mensaje" rows="6" cols="50" minlength="10" maxlength="500" placeholder="Cuéntanos qué te parece la saga o qué te gustaría ver en la web" required></textarea>
+        </p>
+      </fieldset>
+
+      <!-- Botones del formulario -->
+      <p>
+        <input type="submit" id="enviar" name="enviar" value="Enviar inscripción">
+        <input type="reset" id="borrar" value="Borrar formulario">
+      </p>
     </form>
   </div>
 
