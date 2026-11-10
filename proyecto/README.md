@@ -66,4 +66,5 @@ La tabla irá en `juegos.html` y recogerá los juegos de la saga agrupados por e
 | `city.html` | `Arkham City \| Batman: Arkham` | Segundo juego (2011): sinopsis, mundo abierto, villanos y enlaces. |
 | `origins.html` | `Arkham Origins \| Batman: Arkham` | Precuela de WB Games Montreal (2013): sinopsis, diferencias y enlaces. |
 | `knight.html` | `Arkham Knight \| Batman: Arkham` | Cierre de la saga (2015): sinopsis, Batmóvil, DLC y enlaces. |
-| `juegos.html` | `Juegos \| Batman: Arkham` | Todos los juegos de `datos.xml` (título, estudio, año, nota, destacado y DLC), un bloque por juego. |
+| `juegos.html` | `Juegos \| Batman: Arkham` | Todos los juegos de `datos.xml` (título, estudio, año, nota, destacado y DLC), un bloque por juego, y una tabla de la saga por estudio. |
+| `contacto.html` | `Contacto \| Batman: Arkham` | Formulario para apuntarse al club de fans: datos personales, plataforma, juego favorito, villanos preferidos y mensaje. |
