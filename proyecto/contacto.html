@@ -29,6 +29,33 @@
     <h2>Formulario de inscripción</h2>
     <p>Los campos marcados con * son obligatorios.</p>
     <form action="#" method="post">
+      <!-- Grupo 1: datos personales del fan -->
+      <fieldset>
+        <legend>Tus datos</legend>
+        <p>
+          <label for="nombre">Nombre o alias *</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Por ejemplo: Caballero Oscuro" maxlength="40" required autofocus>
+        </p>
+        <p>
+          <label for="email">Correo electrónico *</label>
+          <input type="email" id="email" name="email" placeholder="tu.correo@ejemplo.com" maxlength="60" required>
+        </p>
+        <p>
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="600 123 456" maxlength="15">
+        </p>
+        <p>¿En qué plataforma juegas a la saga?</p>
+        <p>
+          <input type="radio" id="plataforma-playstation" name="plataforma" value="playstation" checked>
+          <label for="plataforma-playstation">PlayStation</label>
+          <input type="radio" id="plataforma-xbox" name="plataforma" value="xbox">
+          <label for="plataforma-xbox">Xbox</label>
+          <input type="radio" id="plataforma-pc" name="plataforma" value="pc">
+          <label for="plataforma-pc">PC</label>
+          <input type="radio" id="plataforma-switch" name="plataforma" value="switch">
+          <label for="plataforma-switch">Nintendo Switch</label>
+        </p>
+      </fieldset>
     </form>
   </div>
 
